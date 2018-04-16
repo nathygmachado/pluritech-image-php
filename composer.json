@@ -1,5 +1,5 @@
 {
-    "name": "pluritech-image-php",
+    "name": "pluritech-image-php/ImagePhp",
     "description": "This package has the aim of upload images (only gif, jpg and png for now) and resize automatically them according with configuration pre-configured.",
     "keywords": ["images", "php", "pluritech","automatic resize"],
     "homepage": "https://github.com/nathygmachado/pluritech-image-php",
