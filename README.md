@@ -1,9 +1,9 @@
 
 # pluritech-image-php
 
-# Image Upload for PHP from Base64 (v1)
+# Image Upload for PHP from Base 64 (v1)
 
-This repository contains the open source PHP that allows image upload from your PHP app wit size pre-configured.
+This repository contains the open source PHP that allows image upload from your PHP app with pre-configured size.
 
 
 ## Installation
