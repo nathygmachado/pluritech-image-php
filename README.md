@@ -1,5 +1,4 @@
 
-try{
 # pluritech-image-php
 
 # Image Upload for PHP from Base64 (v1)
