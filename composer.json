@@ -1,0 +1,27 @@
+{
+    "name": "Pluritech-ImagePHP",
+    "description": "This package has the aim of upload images (only gif, jpg and png for now) and resize automatically them according with configuration pre-configured.",
+    "keywords": ["images", "php", "pluritech","automatic resize"],
+    "homepage": "https://github.com/Pluritech/fcm-php",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guilherme Augusto Silva Valentim",
+            "email": "valentim.guilherme@gmail.com",
+            "homepage": "https://www.pluritech.com.br"
+        },
+        {
+            "name": "Natália Gonçalves Machado",
+            "email": "nathygmachado@gmail.com",
+            "homepage": "https://www.pluritech.com.br"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "ext-gd": "*"
+    },
+    "autoload": {
+        "psr-4": {"ImagePhp\\": "src/ImagePhp"}
+    }
+}
