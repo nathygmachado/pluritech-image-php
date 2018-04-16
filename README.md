@@ -28,8 +28,11 @@ use ImagePhp\GeneratorImageSDK as GeneratorImageSDK;
 use \Exception;
 use ImagePhp\Exception\ImageException;
 
-$config['base_url']      = 'http://localhost\uploads/teste/';//web path where the picture will be uploaded
-$config['dir']           = __DIR__.'/../../../public/uploads/teste/'; //path where the picture will be uploaded
+$url_path = //web path where the picture will be uploaded
+$dir =  //path where the picture will be uploaded
+
+$config['base_url']      = $url_path;
+$config['dir']           = $dir;
 $config['folder']        = 'teste';//folder where the picture will be uploaded - make more sense when the images are divided in diferent categories
 $config['width']         = 650;//pre-configured width to be set on image
 $config['height']        = 310;//pre-configured height to be set on image
