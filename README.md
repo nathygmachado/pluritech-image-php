@@ -44,13 +44,13 @@ $config['square_height'] = 200;//pre-configured height to be set on square image
     
 generatorSDK = new GeneratorImageSDK($config);
 
-
-$base64 = 'base 64 here' // on this site you can get 64 base from a image - https://www.base64-image.de/
-$photo = getGenerateImageSDK()->generatePhoto($base64);
-getGenerateImageSDK()->setPicture($photo);         
-$photo = getGenerateImageSDK()->automaticResize();
-getGenerateImageSDK()->setPicture($photo);
-$photo = getGenerateImageSDK()->createImages();
+try{
+	$base64 = 'base 64 here' // on this site you can get 64 base from a image - https://www.base64-image.de/
+	$photo = getGenerateImageSDK()->generatePhoto($base64);
+	getGenerateImageSDK()->setPicture($photo);         
+	$photo = getGenerateImageSDK()->automaticResize();
+	getGenerateImageSDK()->setPicture($photo);
+	$photo = getGenerateImageSDK()->createImages();
 
 
 } catch (ImageException $e) {
