@@ -29,7 +29,7 @@ use \Exception;
 use ImagePhp\Exception\ImageException;
 
 $config['base_url']      = 'http://localhost\uploads/teste/';//web path where the picture will be uploaded
-$config['dir']           = __DIR__.'/../../../public/uploads/teste/'; path where the picture will be uploaded
+$config['dir']           = __DIR__.'/../../../public/uploads/teste/'; //path where the picture will be uploaded
 $config['folder']        = 'teste';//folder where the picture will be uploaded - make more sense when the images are divided in diferent categories
 $config['width']         = 650;//pre-configured width to be set on image
 $config['height']        = 310;//pre-configured height to be set on image
@@ -46,11 +46,11 @@ generatorSDK = new GeneratorImageSDK($config);
 
 
 $base64 = 'base 64 here' // on this site you can get 64 base from a image - https://www.base64-image.de/
-    $photo = getGenerateImageSDK()->generatePhoto($base64);
-    getGenerateImageSDK()->setPicture($photo);         
-    $photo = getGenerateImageSDK()->automaticResize();
-    getGenerateImageSDK()->setPicture($photo);
-    $photo = getGenerateImageSDK()->createImages();
+$photo = getGenerateImageSDK()->generatePhoto($base64);
+getGenerateImageSDK()->setPicture($photo);         
+$photo = getGenerateImageSDK()->automaticResize();
+getGenerateImageSDK()->setPicture($photo);
+$photo = getGenerateImageSDK()->createImages();
 
 
 } catch (ImageException $e) {
