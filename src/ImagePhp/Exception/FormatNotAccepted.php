@@ -1,5 +1,5 @@
 <?php
-namespace ImagePhp\Exception\;
+namespace ImagePhp\Exception;
 
 use \Exception;
 use ImagePhp\Exception\ImageException;

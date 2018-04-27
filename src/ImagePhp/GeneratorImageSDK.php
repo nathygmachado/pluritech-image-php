@@ -277,7 +277,7 @@ class GeneratorImageSDK{
      */    
     public function getImage($image){
 
-        return $this->getPictureConfiguration()->getBaseUrl().$image;
+        return $this->getPictureConfiguration()->getUrl().$image;
     }
     /**
      * Cria um diretório se ele não existir

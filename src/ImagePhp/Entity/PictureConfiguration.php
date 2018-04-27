@@ -8,7 +8,7 @@ use \Exception;
 class PictureConfiguration 
 {
 
-    private $folder;
+
     private $width;
     private $height;
     private $thumb;
@@ -19,7 +19,7 @@ class PictureConfiguration
     private $square;
     private $square_width;
     private $square_height;
-    private $base_url;
+    private $url;
     private $dir;
 
 
@@ -28,7 +28,7 @@ class PictureConfiguration
      */
     public function __construct($conf_picture){
 
-        $this->setFolder($conf_picture['folder']);      
+   
         $this->setWidth($conf_picture['width']);      
         $this->setHeight($conf_picture['height']);      
         $this->setThumb($conf_picture['thumb']);      
@@ -39,16 +39,10 @@ class PictureConfiguration
         $this->setSquare($conf_picture['square']);      
         $this->setSquareWidth($conf_picture['square_width']);      
         $this->setSquareHeight($conf_picture['square_height']); 
-        $this->setBaseUrl($conf_picture['base_url']);  
+        $this->setUrl($conf_picture['url']);  
         $this->setDir($conf_picture['dir']); 
     }
 
-    /**
-     * Set folder configuration
-     */
-    public function setFolder($folder){
-        $this->folder = $folder;
-    }
     
     /**
      * Set width configuration
@@ -121,10 +115,10 @@ class PictureConfiguration
     }
     
     /**
-     * Set base_url configuration
+     * Set url configuration
      */
-    public function setBaseUrl($base_url){
-        $this->base_url = $base_url;
+    public function setUrl($url){
+        $this->url = $url;
     }
     
     /**
@@ -134,13 +128,6 @@ class PictureConfiguration
         $this->dir = $dir;
     }
 
-    /**
-     * Get folder configuration
-     */
-    public function getFolder(){
-        return $this->folder;
-    }
-    
     /**
      * Get width configuration
      */
@@ -214,12 +201,12 @@ class PictureConfiguration
     /**
      * Get url configuration
      */
-    public function getBaseUrl(){
-        return $this->base_url;
+    public function getUrl(){
+        return $this->url;
     }
     
     /**
-     * Get base_url configuration
+     * Get url configuration
      */
     public function getDir(){
         return $this->dir;

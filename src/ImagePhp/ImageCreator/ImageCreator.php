@@ -2,10 +2,10 @@
 namespace ImagePhp\ImageCreator;
 
 use \Exception;
-use App\ImagePhp\ImageCreator\ImageGif as ImageGif;
-use App\ImagePhp\ImageCreator\ImageJpeg as ImageJpeg;
-use App\ImagePhp\ImageCreator\ImagePng as ImagePng;
-use App\ImagePhp\Exception\FormatNotAccepted as FormatNotAccepted;
+use ImagePhp\ImageCreator\ImageGif as ImageGif;
+use ImagePhp\ImageCreator\ImageJpeg as ImageJpeg;
+use ImagePhp\ImageCreator\ImagePng as ImagePng;
+use ImagePhp\Exception\FormatNotAccepted as FormatNotAccepted;
 
 /**
  * Define uma classe de exceção
