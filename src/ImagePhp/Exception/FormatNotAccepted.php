@@ -5,8 +5,6 @@ use \Exception;
 use ImagePhp\Exception\ImageException;
 /**
  * Define uma classe de exceção
-
- classe incompleta
  */
 class FormatNotAccepted extends ImageException{
     // Redefine a exceção de forma que a mensagem não seja opcional
