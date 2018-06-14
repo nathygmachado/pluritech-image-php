@@ -16,8 +16,6 @@ composer require pluritech-image-php/image-php
 
 ## Usage
 
-> **Note:** This version of the Google FCM SDK for PHP requires PHP 5.3.3 or greater.
-
 Simple use example.
 
 ```php
