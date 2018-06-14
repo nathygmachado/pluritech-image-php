@@ -13,7 +13,9 @@ class FormatNotAccepted extends ImageException{
     public function __construct() {
 
         // garante que tudo está corretamente inicializado
-        parent::__construct('Format not accepted. Only accepted gif, png or jpg','FormatNotAccepted', 01);
+    	$observation = array('accepted_types'  =>  array('.gif','.png','.jpg','.jpeg' ));
+        parent::__construct('Format not accepted. Only accepted gif, png or jpg','FormatNotAccepted', 01, $observation);
+
     }
 
     // personaliza a apresentação do objeto como string

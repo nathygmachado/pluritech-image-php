@@ -8,10 +8,12 @@ use \Exception;
  */
 class ImageException extends Exception{
     private $status;
+    private $observation;
     // Redefine a exceção de forma que a mensagem não seja opcional
-    public function __construct($message, $status, $code = 0, Exception $previous = null) {
+    public function __construct($message, $status, $code = 0, $observation = array(), Exception $previous = null) {
         // código
-        $this->status = $status;
+        $this->status      = $status;
+        $this->observation = $observation;
         // garante que tudo está corretamente inicializado
         parent::__construct($message, $code, $previous);
     }
@@ -23,6 +25,15 @@ class ImageException extends Exception{
 
     public function getStatus() {
         return $this->status;
+    }
+
+    public function getException(){
+        $exception = array( 'status'   => $this->status,
+                            'message'  => $this->message,
+                            'code'     => $this->code
+            );
+
+        return array_merge($exception, $this->observation);
     }
 
 }

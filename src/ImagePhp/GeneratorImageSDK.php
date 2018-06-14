@@ -13,7 +13,6 @@ use ImagePhp\ImageCreator\ImageCreator as ImageCreator;
 
 class GeneratorImageSDK{
 
-    //private $base_url;
     private $water_mark = null;   
     private $conf_picture = null;
     private $picture = null;
