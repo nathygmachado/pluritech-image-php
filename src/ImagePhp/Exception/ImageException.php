@@ -30,7 +30,7 @@ class ImageException extends Exception{
     public function getException(){
         $exception = array( 'status'   => $this->status,
                             'message'  => $this->message,
-                            'code'     => $this->code
+                            'code'     => 'F'.sprintf("%02d", $this->code)
             );
 
         return array_merge($exception, $this->observation);
